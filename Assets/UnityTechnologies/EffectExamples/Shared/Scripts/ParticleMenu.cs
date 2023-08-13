@@ -53,6 +53,5 @@ public class ParticleMenu : MonoBehaviour {
 		title.text = particleSystems [currentIndex].title;
 		description.text = particleSystems [currentIndex].description;
 		navigationDetails.text = "" + (currentIndex+1) + " out of " + particleSystems.Length.ToString();
-
 	}
 }
