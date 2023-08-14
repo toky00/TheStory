@@ -3329,6 +3329,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 07a2e5c664453914d8270d2c36af1001, type: 2}
+    - target: {fileID: -4727493817892639830, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -4280896580283686381, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -3353,6 +3357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dumpster
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3363,12 +3371,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1027840678}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1027840680}
     - targetCorrespondingSourceObject: {fileID: -4727493817892639830, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1265591993}
     - targetCorrespondingSourceObject: {fileID: -4727493817892639830, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1265591997}
+    - targetCorrespondingSourceObject: {fileID: -4727493817892639830, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1265591998}
   m_SourcePrefab: {fileID: 100100000, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
 --- !u!1 &729652313
 GameObject:
@@ -14483,6 +14497,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5124574302441228235, guid: 4f2054261f41f4d44993a1ef7f68eca2, type: 3}
+--- !u!114 &1027840680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027840674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4826375a98f73d4db4b951c8593da11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactData: {fileID: 11400000, guid: c354037250366de44b4d523fdd05c73c, type: 2}
+  activationEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1265591997}
+        m_TargetAssemblyTypeName: Actuator, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1040339106
 GameObject:
   m_ObjectHideFlags: 0
@@ -14921,19 +14963,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 625403597, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       propertyPath: m_Color.a
-      value: 0.5372549
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 625403597, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       propertyPath: m_Color.b
-      value: 0.333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 625403597, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       propertyPath: m_Color.g
-      value: 0.333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 625403597, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       propertyPath: m_Color.r
-      value: 0.333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5147555718122942921, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       propertyPath: footstepRef
@@ -15056,6 +15098,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1520325112}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9109602296278893370, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1101980882}
     - targetCorrespondingSourceObject: {fileID: 9109602296500331173, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 63886648}
@@ -15069,6 +15114,22 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 911756167}
   m_SourcePrefab: {fileID: 100100000, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
+--- !u!114 &1100848596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 625403597, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
+  m_PrefabInstance: {fileID: 1100848595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1100848597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9109602296278893370, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
+  m_PrefabInstance: {fileID: 1100848595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1101568313
 GameObject:
   m_ObjectHideFlags: 0
@@ -15179,6 +15240,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9109602296278893350, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
   m_PrefabInstance: {fileID: 1100848595}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1101980882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100848597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a0969d588385b4f97bc662cf2aa05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 63886645}
+  reticle: {fileID: 1100848596}
+  interactText: {fileID: 1520325114}
+  maxDistance: 2
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  interactColor: {r: 1, g: 1, b: 1, a: 0.25882354}
 --- !u!1 &1102260867
 GameObject:
   m_ObjectHideFlags: 0
@@ -15771,6 +15850,34 @@ MonoBehaviour:
     m_RotationOrder: 4
   displacementPower: -68.98
   duration: 1
+--- !u!114 &1265591998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265591989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4826375a98f73d4db4b951c8593da11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactData: {fileID: 11400000, guid: c354037250366de44b4d523fdd05c73c, type: 2}
+  activationEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1265591997}
+        m_TargetAssemblyTypeName: Actuator, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1268583405 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9109602297179183335, guid: 4d17cf66ee97fe446a8e86e7cd3f1b9f, type: 3}
@@ -17641,7 +17748,7 @@ GameObject:
   - component: {fileID: 1520325114}
   - component: {fileID: 1520325113}
   m_Layer: 8
-  m_Name: ItemNameDisplay
+  m_Name: InteractText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17687,7 +17794,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520325111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
